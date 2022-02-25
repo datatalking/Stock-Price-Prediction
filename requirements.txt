@@ -1,7 +1,6 @@
-The following need to be installed before running the file stock_prediction.py(main file)
-—— python 3.x
-—- pandas
-—- numpy
-—- matplotlib
-—- tensorflow
-—- keras
+python 3.x
+pandas
+numpy
+matplotlib
+tensorflow
+keras

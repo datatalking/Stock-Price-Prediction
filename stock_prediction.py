@@ -13,6 +13,7 @@
 
 import load_data as ld
 import model_configure as mc
+import tensorflow
 import pandas as pd
 import math
 import matplotlib.pyplot as plt

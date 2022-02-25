@@ -19,8 +19,8 @@ from keras.layers.recurrent import LSTM
 from keras.models import Sequential
 import matplotlib.pyplot as plt
 
-def load_data(data_sheet, seq_len):
 
+def load_data(data_sheet, seq_len):
     # number of features = no of columns of the .csv file
     number_of_features = len(data_sheet.columns)
     # get the data in form of matrix from the .csv file
@@ -44,6 +44,7 @@ def load_data(data_sheet, seq_len):
     x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], number_of_features ))
     return [x_train, y_train, x_test, y_test]
 
+
 def build_model(batch_size, output_dim):
         # as the first layer in a Sequential model
         model = Sequential()
@@ -61,6 +62,7 @@ def build_model(batch_size, output_dim):
         # compile our model using loss function = mean sqaured error and adam optimizer
         model.compile(loss='mse',optimizer='adam',metrics=['accuracy'])
         return model
+
 
 def plot_model(predict_x, y_test):
     plt.plot(predict_x,color='red', label='Prediction')

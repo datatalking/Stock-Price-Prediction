@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
-from pandas import datetime
 import math, time
 import datetime as dt
+
 
 def  fetch_data(name):
     # get the current system date : yy-mm-dd
